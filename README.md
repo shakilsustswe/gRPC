@@ -1,6 +1,5 @@
 <h2>gRPC</h2>
-<p>gRPC with HashMap</p>
-
+<p style="bold">gRPC with HashMap</p>
 Features:
 <br>
 Registration
