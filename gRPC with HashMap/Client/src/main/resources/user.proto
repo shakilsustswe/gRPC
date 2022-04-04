@@ -1,0 +1,28 @@
+
+
+syntax="proto3";
+
+option java_package = "com.shakilsustswe.grpc";
+
+service user{
+  rpc Register(Registration) returns (ApiResponse);
+  rpc LogIn(LoginRequest) returns (ApiResponse);
+  rpc Logout(Empty) returns (ApiResponse);
+}
+message Registration{
+  string UserName=1;
+  string Email=2;
+  string password=3;
+}
+message LoginRequest{
+  string UserName=1;
+  string password=2;
+}
+message ApiResponse{
+  string ResponseMessage=1;
+  int64 ResponseCode=2;
+}
+
+message Empty{
+
+}
