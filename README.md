@@ -1,5 +1,5 @@
 <h2>gRPC</h2>
-<p style="bold">gRPC with HashMap</p>
+<p><h3>gRPC with HashMap</h3></p>
 Features:
 <br>
 Registration
@@ -8,9 +8,13 @@ LogIn
 <br>
 LogOut
 <br>
-gRPC with MySQL DataBase
+<p><h2>gRPC with MySQL DataBase</h2></p>
 Features:
+<br>
 gRPC Connection With MySQL DataBase by JDBC
+<br>
 Registration
+<br>
 LogIn
+<br>
 LogOut
