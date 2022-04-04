@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option java_package = "com.shakil.MySQLgRPC";
+
+service user{
+
+  rpc register(Registration) returns (APIResponse);
+  rpc login(LoginRequest) returns (APIResponse);
+  rpc logout(Empty) returns (APIResponse);
+
+}
+message Registration{
+
+  string username = 1;
+  string email = 2;
+  string password = 3;
+}
+message LoginRequest{
+
+  string username = 1;
+  string password = 2;
+
+}
+message APIResponse{
+
+  string responseMessage = 1;
+  int32 responseCode = 2;
+
+}
+message Empty{
+
+}
